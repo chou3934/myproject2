@@ -7,5 +7,14 @@ public class GraduateStudent extends Student{
         this.thesis=thesis;
 
     }
+    @Override
+    public void print(){
+        System.out.print(name+"\t"+english+"\t"+math+"\t"+getAverage());
+        if(getAverage()<70 || thesis<70){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+
 
 }
