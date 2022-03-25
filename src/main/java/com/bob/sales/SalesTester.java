@@ -1,4 +1,4 @@
-package com.bob;
+package com.bob.sales;
 
 public class SalesTester {
     public static void main(String[] args) {

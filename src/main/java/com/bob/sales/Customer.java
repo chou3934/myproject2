@@ -1,4 +1,4 @@
-package com.bob;
+package com.bob.sales;
 
 import java.util.SplittableRandom;
 

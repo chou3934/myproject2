@@ -1,4 +1,4 @@
-package com.bob;
+package com.bob.sales;
 
 public class GoldenCustomer extends Customer{
     public GoldenCustomer(String number,int price){

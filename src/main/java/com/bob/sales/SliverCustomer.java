@@ -1,4 +1,4 @@
-package com.bob;
+package com.bob.sales;
 
 public class SliverCustomer extends Customer{
     public SliverCustomer(String number,int price) {

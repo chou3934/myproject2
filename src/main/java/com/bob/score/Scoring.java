@@ -1,4 +1,4 @@
-package com.bob;
+package com.bob.score;
 
 public class Scoring {
     public static void main(String[] args) {

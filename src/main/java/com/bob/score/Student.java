@@ -1,4 +1,4 @@
-package com.bob;
+package com.bob.score;
 
 public class Student {
     String name;
