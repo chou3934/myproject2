@@ -1,18 +1,18 @@
 package com.bob.sales;
 
-public class GoldenCustomer extends Customer{
+public class GoldenCustomer extends SliverCustomer{
     public GoldenCustomer(String number,int price){
         super(number, price);
     }
-    public void print(){
-        if (price > 1000) {
-            int money = (price / 1000) * 200;
-            int payback = (price / 1000) * 200;
-            System.out.print( number +"\t"+ price+"\t"+ (price - money) + "\t"+"(" + payback+")");
-        }
-        else{
-            System.out.print(number+"\t"+price);
-        }
-        System.out.println();
+
+    @Override
+    public int getpayback() {
+        return price/10;
     }
+
+    @Override
+    public int getmoney() {
+        return price/10;
+    }
+
 }

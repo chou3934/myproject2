@@ -1,4 +1,4 @@
-package com.bob.highSpeedRail;
+package com.bob.ticket;
 
 public class Station {
     int id;

@@ -5,14 +5,17 @@ public class SliverCustomer extends Customer{
         super(number, price);
 
     }
+    public int getpayback(){
+        return (price / 1000) * 100;
+    }
+
+
     public void print(){
         if (price > 1000) {
-            int money = (price / 1000) * 100;
-            int payback = (price / 1000) * 100;
-            System.out.print( number +"\t"+ price+"\t"+ (price - money) + "\t"+"(" + payback+")");
+            System.out.print( number +"\t"+ price+"\t"+ (price - getmoney()) + "\t"+"(" + getpayback()+")");
         }
         else{
-            System.out.print(number+"\t"+price);
+            System.out.print(number+"\t"+price+"\t"+price);
         }
         System.out.println();
     }

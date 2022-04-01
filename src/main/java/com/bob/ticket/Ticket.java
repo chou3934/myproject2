@@ -1,4 +1,4 @@
-package com.bob.highSpeedRail;
+package com.bob.ticket;
 
 public class Ticket {
     public static final int TAIPEI_CITY=1;

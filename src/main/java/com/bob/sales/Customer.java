@@ -11,10 +11,12 @@ public class Customer {
         this.price=price;
 
     }
+    public int getmoney(){
+        return (price/1000)*100;
+    }
     public void print(){
         if(price>1000){
-            int money=(price/1000)*100;
-            System.out.print(number+"\t"+price+"\t"+(price-money));
+            System.out.print(number+"\t"+price+"\t"+(price-getmoney()));
         }
         else{
             System.out.print(number+"\t"+price+"\t"+price);
