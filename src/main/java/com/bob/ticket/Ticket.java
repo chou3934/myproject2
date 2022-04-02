@@ -31,6 +31,14 @@ public class Ticket {
                 price=1500*number;
             }
         }
+        else if(start==Station.TAICHUNG){
+            if(destination==Station.TAIPEI_CITY){
+                price=600*number;
+            }
+            else{
+                price=900*number;
+            }
+        }
         return price;
     }
     public void print(){
@@ -48,6 +56,14 @@ public class Ticket {
             }
             else{
                 System.out.println("Kaohsiung-Taipei "+"ticket:"+number+" "+"price:"+price());
+            }
+        }
+        else if(start==Station.TAICHUNG){
+            if(destination==Station.TAIPEI_CITY){
+                System.out.println("Taichung-Taipei "+"ticket:"+number+" "+"price:"+price());
+            }
+            else{
+                System.out.println("Taichung-Kaohsiung "+"ticket:"+number+" "+"price:"+price());
             }
         }
 

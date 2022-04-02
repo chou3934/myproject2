@@ -48,7 +48,7 @@ public class Machine {
             Scanner s2 = new Scanner(System.in);
             int type = Integer.parseInt(s2.next());
 
-            System.out.println("How many ticket do you want");
+            System.out.println("How many ticket do you want?");
             Scanner s3 = new Scanner(System.in);
             int number = Integer.parseInt(s3.next());
 
@@ -77,6 +77,7 @@ public class Machine {
             Scanner s4 = new Scanner(System.in);
             int answer = Integer.parseInt(s4.next());
             if (answer == 0) {
+                System.out.println("Ending.Total: "+money);
                 a=false;
             }
         }
