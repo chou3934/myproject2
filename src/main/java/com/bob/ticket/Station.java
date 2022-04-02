@@ -9,6 +9,6 @@ public class Station {
     }
     public static  final  Station TAIPEI_CITY=new Station(1,"Taipei");
     public static  final  Station TAICHUNG=new Station(2,"Taichung");
-    public static  final  Station KAUHSUING=new Station(3,"Kauhsuing");
+    public static  final  Station KAOHSIUNG=new Station(3,"Kaohsiung");
 
 }
