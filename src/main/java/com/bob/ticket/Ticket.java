@@ -8,6 +8,7 @@ public class Ticket {
     Station destination;
     int number;
     int price;
+    String type;
 
     public Ticket(Station start,Station destination,int number) {
        this.start=start;
@@ -41,29 +42,32 @@ public class Ticket {
         }
         return price;
     }
+    public String type(){
+        return type="normal";
+    }
     public void print(){
         if (start == Station.TAIPEI_CITY){
             if(destination==Station.TAICHUNG){
-                System.out.println("Taipei-Taichung "+"ticket:"+number+" "+"price:"+price());
+                System.out.println("Taipei-Taichung type:"+type()+" ticket:"+number+" price:"+price());
             }
             else{
-                System.out.println("Taipei-Kaohsiung "+"ticket:"+number+" "+"price:"+price());
+                System.out.println("Taipei-Kaohsiung type:"+type()+" ticket:"+number+" price:"+price());
             }
         }
         else if(start==Station.KAOHSIUNG){
             if(destination==Station.TAICHUNG){
-                System.out.println("Kaohsiung-Taichung "+"ticket:"+number+" "+"price:"+price());
+                System.out.println("Kaohsiung-Taichung type:"+type()+" ticket:"+number+" price:"+price());
             }
             else{
-                System.out.println("Kaohsiung-Taipei "+"ticket:"+number+" "+"price:"+price());
+                System.out.println("Kaohsiung-Taipei type:"+type()+" ticket:"+number+" price:"+price());
             }
         }
         else if(start==Station.TAICHUNG){
             if(destination==Station.TAIPEI_CITY){
-                System.out.println("Taichung-Taipei "+"ticket:"+number+" "+"price:"+price());
+                System.out.println("Taichung-Taipei type:"+type()+" ticket:"+number+" price:"+price());
             }
             else{
-                System.out.println("Taichung-Kaohsiung "+"ticket:"+number+" "+"price:"+price());
+                System.out.println("Taichung-Kaohsiung type:"+type()+" ticket:"+number+" price:"+price());
             }
         }
 

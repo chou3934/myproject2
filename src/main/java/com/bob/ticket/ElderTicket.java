@@ -11,4 +11,9 @@ public class ElderTicket extends Ticket{
         price=price/2;
         return price;
     }
+
+    @Override
+    public String type() {
+        return type="elder";
+    }
 }

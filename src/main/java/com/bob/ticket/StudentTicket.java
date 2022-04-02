@@ -11,4 +11,9 @@ public class StudentTicket extends Ticket{
         price=price/5*4;
         return price;
     }
+
+    @Override
+    public String type() {
+        return type="student";
+    }
 }

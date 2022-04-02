@@ -8,7 +8,12 @@ public class RoundTripTicket extends Ticket{
     @Override
     public int price() {
         super.price();
-        price=price/5*6;
+        price=price/5*9;
         return price;
+    }
+
+    @Override
+    public String type() {
+        return type="round-trip";
     }
 }
