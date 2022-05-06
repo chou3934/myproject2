@@ -1,9 +1,9 @@
 package com.bob.ticket;
 
 public class Ticket {
-    public static final int TAIPEI_CITY=1;
-    public static final int TAICHUNG_CITY=2;
-    public static final int KAOHSIUNG_CITY=3;
+    public static final int TAIPEI_CITY=100;
+    public static final int TAICHUNG_CITY=200;
+    public static final int KAOHSIUNG_CITY=300;
     Station start;
     Station destination;
     int number;
@@ -14,33 +14,47 @@ public class Ticket {
        this.start=start;
        this.destination=destination;
        this.number=number;
-    }
-    public int price(){
+
+       int diff =Math.abs(start.id-destination.id);
+       switch (diff){
+           case 100:
+               price=500;
+               break;
+           case 200:
+               price=600;
+               break;
+           case 300:
+               price=1100;
+               break;
+       }
+
         if (start == Station.TAIPEI_CITY){
             if(destination==Station.TAICHUNG){
-                price=600*number;
+                price=500;
             }
             else{
-                price=1500*number;
+                price=1100;
             }
         }
         else if(start==Station.KAOHSIUNG){
             if(destination==Station.TAICHUNG){
-                price=900*number;
+                price=600;
             }
             else{
-                price=1500*number;
+                price=1100;
             }
         }
         else if(start==Station.TAICHUNG){
             if(destination==Station.TAIPEI_CITY){
-                price=600*number;
+                price=500;
             }
             else{
-                price=900*number;
+                price=600;
             }
         }
-        return price;
+    }
+    public int price(){
+        return price*number;
     }
     public String type(){
         return type="normal";
