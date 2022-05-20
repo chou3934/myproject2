@@ -2,7 +2,7 @@ package com.bob.sales;
 
 import java.util.SplittableRandom;
 
-public class Customer implements MyInterface{
+public class Customer{
     String number;
     int price;
 
@@ -15,7 +15,7 @@ public class Customer implements MyInterface{
         return (price/1000)*100;
     }
 
-    @Override
+
     public void print(){
         if(price>1000){
             System.out.print(number+"\t"+price+"\t"+(price-getmoney()));
